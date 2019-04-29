@@ -23,9 +23,6 @@ System dependencies
     - cd sur le répo
     - rm Gemfile.lock 
     - bundle install
-    - rails db:create pour la BDD
-    - rails db:migratepour créer les tables de la BDD
-  - rails db:seedpour alimenter la BDD avec un jeu d'essai.
 
 # Tout faire rouler 
 
