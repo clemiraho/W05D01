@@ -1,0 +1,20 @@
+
+
+<h1 align="center">The Gossip Project</h1>
+
+
+<div class="card-columns">
+
+        <% @potins.each do |potin| %>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <%= link_to potin.title, gossip_path(potin.id) %>
+                </h5>
+                <p class="card-subtitle">
+                    - <%= link_to potin.user.first_name, user_path(potin.user.id) %>
+                </p>
+            </div>
+        </div>
+        <% end %>
+</div>

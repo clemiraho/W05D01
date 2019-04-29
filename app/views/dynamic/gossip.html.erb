@@ -1,0 +1,6 @@
+
+       <h3><%= @gossip.title %> </h3>
+        <%= @gossip.content %>
+
+       <p> - <%= link_to @gossip.user.first_name+" "+@gossip.user.last_name, user_path(@gossip.user.id) %>, <%= @gossip.created_at %> </p>
+

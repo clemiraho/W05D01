@@ -1,0 +1,1617 @@
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "the_gossip_project_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "the_gossip_project_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4833031731104927805)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4833031731104927805)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCity Destroy (2.4ms)[0m  [1m[31mDELETE FROM "cities"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (3.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPotin Destroy (2.4ms)[0m  [1m[31mDELETE FROM "potins"[0m
+  ↳ db/seeds.rb:13
+  [1m[36mTag Destroy (2.3ms)[0m  [1m[31mDELETE FROM "tags"[0m
+  ↳ db/seeds.rb:14
+  [1m[36mJoinTablePotinTag Destroy (2.4ms)[0m  [1m[31mDELETE FROM "join_table_potin_tags"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPrivateMessage Destroy (2.3ms)[0m  [1m[31mDELETE FROM "private_messages"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Irem"], ["zip_code", "51015-9536"], ["created_at", "2019-04-29 21:42:01.828554"], ["updated_at", "2019-04-29 21:42:01.828554"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (25.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Leng"], ["zip_code", "53888-4881"], ["created_at", "2019-04-29 21:42:01.856781"], ["updated_at", "2019-04-29 21:42:01.856781"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Yuggoth"], ["zip_code", "32404-7067"], ["created_at", "2019-04-29 21:42:01.867614"], ["updated_at", "2019-04-29 21:42:01.867614"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Irem"], ["zip_code", "52033"], ["created_at", "2019-04-29 21:42:01.878582"], ["updated_at", "2019-04-29 21:42:01.878582"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Yuggoth"], ["zip_code", "17535"], ["created_at", "2019-04-29 21:42:01.889978"], ["updated_at", "2019-04-29 21:42:01.889978"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dunwich"], ["zip_code", "34602"], ["created_at", "2019-04-29 21:42:01.900986"], ["updated_at", "2019-04-29 21:42:01.900986"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Yuggoth"], ["zip_code", "37806-6538"], ["created_at", "2019-04-29 21:42:01.912288"], ["updated_at", "2019-04-29 21:42:01.912288"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.2ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dunwich"], ["zip_code", "32677"], ["created_at", "2019-04-29 21:42:01.923219"], ["updated_at", "2019-04-29 21:42:01.923219"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.3ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Arkham"], ["zip_code", "48040"], ["created_at", "2019-04-29 21:42:01.934239"], ["updated_at", "2019-04-29 21:42:01.934239"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Create (0.4ms)[0m  [1m[32mINSERT INTO "cities" ("name", "zip_code", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "R’lyeh"], ["zip_code", "03479"], ["created_at", "2019-04-29 21:42:01.945632"], ["updated_at", "2019-04-29 21:42:01.945632"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Alice"], ["last_name", "Harvey"], ["description", "When sorrows come, they come not single spies, but in battalions."], ["email", "earnest_reinger@gmail.com"], ["age", 64], ["city_id", 27], ["created_at", "2019-04-29 21:42:01.971356"], ["updated_at", "2019-04-29 21:42:01.971356"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Joshua"], ["last_name", "Kohler"], ["description", "I will speak daggers to her, but use none."], ["email", "conrad@gmail.com"], ["age", 69], ["city_id", 24], ["created_at", "2019-04-29 21:42:01.980104"], ["updated_at", "2019-04-29 21:42:01.980104"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Bernard"], ["last_name", "Barton"], ["description", "And it must follow, as the night the day, thou canst not then be false to any man."], ["email", "sang@hotmail.com"], ["age", 56], ["city_id", 24], ["created_at", "2019-04-29 21:42:01.991359"], ["updated_at", "2019-04-29 21:42:01.991359"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Silva"], ["last_name", "Schroeder"], ["description", "Though this be madness, yet there is method in 't."], ["email", "luvenia@gmail.com"], ["age", 53], ["city_id", 25], ["created_at", "2019-04-29 21:42:02.002291"], ["updated_at", "2019-04-29 21:42:02.002291"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Marlin"], ["last_name", "Schoen"], ["description", "This above all: to thine own self be true."], ["email", "fredric_stark@yahoo.com"], ["age", 33], ["city_id", 28], ["created_at", "2019-04-29 21:42:02.013178"], ["updated_at", "2019-04-29 21:42:02.013178"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Christeen"], ["last_name", "Haag"], ["description", "I will speak daggers to her, but use none."], ["email", "janel@gmail.com"], ["age", 71], ["city_id", 24], ["created_at", "2019-04-29 21:42:02.025257"], ["updated_at", "2019-04-29 21:42:02.025257"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Fausto"], ["last_name", "Oberbrunner"], ["description", "I will speak daggers to her, but use none."], ["email", "bret_von@gmail.com"], ["age", 61], ["city_id", 22], ["created_at", "2019-04-29 21:42:02.036283"], ["updated_at", "2019-04-29 21:42:02.036283"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.4ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Lynne"], ["last_name", "Ebert"], ["description", "Though this be madness, yet there is method in 't."], ["email", "henry@gmail.com"], ["age", 72], ["city_id", 30], ["created_at", "2019-04-29 21:42:02.047615"], ["updated_at", "2019-04-29 21:42:02.047615"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Armando"], ["last_name", "Koss"], ["description", "This above all: to thine own self be true."], ["email", "dylan@gmail.com"], ["age", 63], ["city_id", 29], ["created_at", "2019-04-29 21:42:02.058380"], ["updated_at", "2019-04-29 21:42:02.058380"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mCity Load (0.3ms)[0m  [1m[34mSELECT "cities".* FROM "cities"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "city_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["first_name", "Sage"], ["last_name", "Bechtelar"], ["description", "Do you think I am easier to be played on than a pipe?"], ["email", "junita_borer@yahoo.com"], ["age", 34], ["city_id", 21], ["created_at", "2019-04-29 21:42:02.069908"], ["updated_at", "2019-04-29 21:42:02.069908"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.5ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Necronomicon"], ["content", "Iridescence immemorial furtive swarthy eldritch singular. Immemorial cat charnel. Singular mortal squamous fungus shunned iridescence antediluvian gambrel. Daemoniac non-euclidean swarthy dank hideous unmentionable."], ["user_id", 23], ["created_at", "2019-04-29 21:42:02.093540"], ["updated_at", "2019-04-29 21:42:02.093540"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.3ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Necronomicon"], ["content", "Iridescence lurk singular noisome. Shunned charnel squamous singular. Spectral madness ululate gambrel immemorial gibbous charnel daemoniac. Iridescence madness comprehension dank."], ["user_id", 29], ["created_at", "2019-04-29 21:42:02.101052"], ["updated_at", "2019-04-29 21:42:02.101052"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pnakotic Manuscripts"], ["content", "Antediluvian madness unutterable indescribable stygian shunned unmentionable comprehension. Effulgence unmentionable dank iridescence non-euclidean. Daemoniac stench gibbous gibbering squamous decadent fainted tenebrous. Stygian antiquarian fainted cat fungus unnamable immemorial comprehension. Stench comprehension gibbous accursed."], ["user_id", 23], ["created_at", "2019-04-29 21:42:02.115036"], ["updated_at", "2019-04-29 21:42:02.115036"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Necronomicon"], ["content", "Tenebrous effulgence immemorial gambrel mortal indescribable manuscript stench. Noisome cyclopean lurk charnel daemoniac tentacles accursed. Fainted hideous ululate stench swarthy non-euclidean dank gambrel. Hideous abnormal effulgence immemorial squamous."], ["user_id", 21], ["created_at", "2019-04-29 21:42:02.128599"], ["updated_at", "2019-04-29 21:42:02.128599"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pnakotic Manuscripts"], ["content", "Indescribable loathsome accursed unutterable antediluvian comprehension unnamable lurk. Fungus comprehension non-euclidean swarthy fainted tenebrous antiquarian. Mortal abnormal furtive unmentionable spectral stygian non-euclidean. Antiquarian gibbous nameless. Blasphemous non-euclidean gibbous."], ["user_id", 27], ["created_at", "2019-04-29 21:42:02.136401"], ["updated_at", "2019-04-29 21:42:02.136401"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Eltdown Shards"], ["content", "Tentacles stygian spectral abnormal fungus. Antediluvian cat shunned gambrel. Singular blasphemous amorphous tenebrous gibbering. Unutterable fungus shunned gibbering stench blasphemous."], ["user_id", 28], ["created_at", "2019-04-29 21:42:02.147409"], ["updated_at", "2019-04-29 21:42:02.147409"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pnakotic Manuscripts"], ["content", "Spectral foetid gibbering non-euclidean nameless stench antiquarian. Dank gibbous manuscript tenebrous gibbering spectral unmentionable unutterable. Lurk effulgence stygian immemorial loathsome."], ["user_id", 29], ["created_at", "2019-04-29 21:42:02.158387"], ["updated_at", "2019-04-29 21:42:02.158387"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Eltdown Shards"], ["content", "Cyclopean gambrel blasphemous nameless non-euclidean squamous manuscript unnamable. Eldritch amorphous fungus cyclopean ululate. Accursed swarthy abnormal daemoniac comprehension unmentionable charnel indescribable."], ["user_id", 21], ["created_at", "2019-04-29 21:42:02.170787"], ["updated_at", "2019-04-29 21:42:02.170787"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.3ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Book of Eibon"], ["content", "Decadent spectral manuscript antiquarian unnamable shunned. Spectral shunned unnamable comprehension. Madness immemorial spectral."], ["user_id", 24], ["created_at", "2019-04-29 21:42:02.179965"], ["updated_at", "2019-04-29 21:42:02.179965"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.3ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "De Vermis Mysteriis"], ["content", "Cyclopean singular fungus blasphemous unmentionable mortal. Cyclopean squamous abnormal. Comprehension blasphemous hideous. Blasphemous hideous antiquarian immemorial manuscript squamous. Spectral fungus stench."], ["user_id", 26], ["created_at", "2019-04-29 21:42:02.191118"], ["updated_at", "2019-04-29 21:42:02.191118"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.2ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Necronomicon"], ["content", "Tenebrous indescribable cat gibbous fainted ululate. Madness charnel cyclopean unutterable swarthy loathsome. Spectral cyclopean accursed loathsome noisome blasphemous. Swarthy shunned gibbous abnormal furtive cat. Mortal unutterable gibbering spectral unnamable nameless squamous accursed."], ["user_id", 29], ["created_at", "2019-04-29 21:42:02.202099"], ["updated_at", "2019-04-29 21:42:02.202099"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.3ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Necronomicon"], ["content", "Singular foetid loathsome. Tentacles daemoniac gibbering. Non-euclidean accursed antiquarian unmentionable hideous blasphemous stygian. Fungus tenebrous gambrel unmentionable swarthy nameless. Eldritch tentacles gambrel."], ["user_id", 28], ["created_at", "2019-04-29 21:42:02.213672"], ["updated_at", "2019-04-29 21:42:02.213672"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.2ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Book of Eibon"], ["content", "Madness furtive eldritch gibbering antiquarian. Manuscript shunned accursed daemoniac stench comprehension indescribable abnormal. Accursed dank unutterable."], ["user_id", 21], ["created_at", "2019-04-29 21:42:02.224778"], ["updated_at", "2019-04-29 21:42:02.224778"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.2ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "De Vermis Mysteriis"], ["content", "Nameless manuscript hideous fungus gibbous. Hideous spectral mortal iridescence squamous decadent nameless non-euclidean. Noisome charnel unutterable. Immemorial stygian non-euclidean eldritch furtive fungus squamous antediluvian. Tenebrous foetid furtive accursed shunned unutterable blasphemous abnormal."], ["user_id", 22], ["created_at", "2019-04-29 21:42:02.235500"], ["updated_at", "2019-04-29 21:42:02.235500"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Book of Eibon"], ["content", "Indescribable antediluvian unutterable cyclopean gambrel. Tentacles non-euclidean swarthy furtive charnel decadent noisome. Foetid hideous swarthy squamous. Hideous gambrel cat cyclopean squamous. Manuscript iridescence abnormal immemorial cyclopean blasphemous madness."], ["user_id", 29], ["created_at", "2019-04-29 21:42:02.246934"], ["updated_at", "2019-04-29 21:42:02.246934"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.3ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pnakotic Manuscripts"], ["content", "Antiquarian effulgence noisome. Ululate singular furtive antiquarian hideous. Gibbering antediluvian comprehension immemorial. Stygian madness amorphous. Shunned spectral unutterable furtive."], ["user_id", 28], ["created_at", "2019-04-29 21:42:02.257894"], ["updated_at", "2019-04-29 21:42:02.257894"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Eltdown Shards"], ["content", "Madness amorphous antediluvian iridescence comprehension fungus. Accursed cat effulgence gambrel squamous fainted. Non-euclidean decadent mortal furtive stygian spectral tentacles ululate. Unutterable ululate noisome foetid unmentionable. Hideous eldritch fainted lurk."], ["user_id", 30], ["created_at", "2019-04-29 21:42:02.269010"], ["updated_at", "2019-04-29 21:42:02.269010"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.4ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Necronomicon"], ["content", "Iridescence gibbering unnamable abnormal. Singular ululate stench manuscript swarthy spectral shunned foetid. Stench lurk unnamable eldritch unmentionable furtive. Cat lurk non-euclidean gibbering."], ["user_id", 29], ["created_at", "2019-04-29 21:42:02.280624"], ["updated_at", "2019-04-29 21:42:02.280624"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.5ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Necronomicon"], ["content", "Fainted squamous immemorial manuscript mortal eldritch madness. Madness iridescence swarthy amorphous lurk unnamable squamous noisome. Cyclopean manuscript non-euclidean tenebrous shunned fainted hideous madness. Nameless shunned fainted. Nameless spectral foetid cat madness decadent stygian hideous."], ["user_id", 28], ["created_at", "2019-04-29 21:42:02.291892"], ["updated_at", "2019-04-29 21:42:02.291892"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPotin Create (0.3ms)[0m  [1m[32mINSERT INTO "potins" ("title", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "De Vermis Mysteriis"], ["content", "Shunned foetid nameless. Tentacles singular manuscript gibbous daemoniac stygian cat. Indescribable effulgence singular hideous. Effulgence stench cyclopean fainted eldritch unutterable abnormal. Effulgence decadent foetid."], ["user_id", 21], ["created_at", "2019-04-29 21:42:02.302839"], ["updated_at", "2019-04-29 21:42:02.302839"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.4ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Elder"], ["created_at", "2019-04-29 21:42:02.322662"], ["updated_at", "2019-04-29 21:42:02.322662"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.4ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Imperial Planetologist"], ["created_at", "2019-04-29 21:42:02.334511"], ["updated_at", "2019-04-29 21:42:02.334511"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Judge of the Change"], ["created_at", "2019-04-29 21:42:02.345933"], ["updated_at", "2019-04-29 21:42:02.345933"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.3ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Judge of the Change"], ["created_at", "2019-04-29 21:42:02.357140"], ["updated_at", "2019-04-29 21:42:02.357140"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Duke"], ["created_at", "2019-04-29 21:42:02.371739"], ["updated_at", "2019-04-29 21:42:02.371739"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.4ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Duke"], ["created_at", "2019-04-29 21:42:02.379014"], ["updated_at", "2019-04-29 21:42:02.379014"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Viscount"], ["created_at", "2019-04-29 21:42:02.390381"], ["updated_at", "2019-04-29 21:42:02.390381"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.4ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Master of Assassins"], ["created_at", "2019-04-29 21:42:02.401411"], ["updated_at", "2019-04-29 21:42:02.401411"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Mentat"], ["created_at", "2019-04-29 21:42:02.412782"], ["updated_at", "2019-04-29 21:42:02.412782"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Ambassador"], ["created_at", "2019-04-29 21:42:02.424063"], ["updated_at", "2019-04-29 21:42:02.424063"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 49], ["tag_id", 22], ["created_at", "2019-04-29 21:42:02.447806"], ["updated_at", "2019-04-29 21:42:02.447806"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 51], ["tag_id", 21], ["created_at", "2019-04-29 21:42:02.459146"], ["updated_at", "2019-04-29 21:42:02.459146"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 45], ["tag_id", 28], ["created_at", "2019-04-29 21:42:02.470347"], ["updated_at", "2019-04-29 21:42:02.470347"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 46], ["tag_id", 29], ["created_at", "2019-04-29 21:42:02.481730"], ["updated_at", "2019-04-29 21:42:02.481730"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 54], ["tag_id", 29], ["created_at", "2019-04-29 21:42:02.493220"], ["updated_at", "2019-04-29 21:42:02.493220"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.6ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 47], ["tag_id", 24], ["created_at", "2019-04-29 21:42:02.504499"], ["updated_at", "2019-04-29 21:42:02.504499"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 44], ["tag_id", 29], ["created_at", "2019-04-29 21:42:02.514981"], ["updated_at", "2019-04-29 21:42:02.514981"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 41], ["tag_id", 22], ["created_at", "2019-04-29 21:42:02.526023"], ["updated_at", "2019-04-29 21:42:02.526023"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.3ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 54], ["tag_id", 28], ["created_at", "2019-04-29 21:42:02.536675"], ["updated_at", "2019-04-29 21:42:02.536675"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 60], ["tag_id", 24], ["created_at", "2019-04-29 21:42:02.549230"], ["updated_at", "2019-04-29 21:42:02.549230"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 60], ["tag_id", 28], ["created_at", "2019-04-29 21:42:02.559066"], ["updated_at", "2019-04-29 21:42:02.559066"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 58], ["tag_id", 29], ["created_at", "2019-04-29 21:42:02.570336"], ["updated_at", "2019-04-29 21:42:02.570336"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 41], ["tag_id", 25], ["created_at", "2019-04-29 21:42:02.581613"], ["updated_at", "2019-04-29 21:42:02.581613"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 47], ["tag_id", 27], ["created_at", "2019-04-29 21:42:02.592237"], ["updated_at", "2019-04-29 21:42:02.592237"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.3ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 53], ["tag_id", 24], ["created_at", "2019-04-29 21:42:02.603368"], ["updated_at", "2019-04-29 21:42:02.603368"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 57], ["tag_id", 26], ["created_at", "2019-04-29 21:42:02.614694"], ["updated_at", "2019-04-29 21:42:02.614694"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 56], ["tag_id", 21], ["created_at", "2019-04-29 21:42:02.625792"], ["updated_at", "2019-04-29 21:42:02.625792"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.3ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 51], ["tag_id", 22], ["created_at", "2019-04-29 21:42:02.636276"], ["updated_at", "2019-04-29 21:42:02.636276"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 47], ["tag_id", 25], ["created_at", "2019-04-29 21:42:02.647990"], ["updated_at", "2019-04-29 21:42:02.647990"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 55], ["tag_id", 28], ["created_at", "2019-04-29 21:42:02.658399"], ["updated_at", "2019-04-29 21:42:02.658399"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 53], ["tag_id", 23], ["created_at", "2019-04-29 21:42:02.670444"], ["updated_at", "2019-04-29 21:42:02.670444"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 57], ["tag_id", 30], ["created_at", "2019-04-29 21:42:02.681772"], ["updated_at", "2019-04-29 21:42:02.681772"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 57], ["tag_id", 26], ["created_at", "2019-04-29 21:42:02.692496"], ["updated_at", "2019-04-29 21:42:02.692496"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 51], ["tag_id", 21], ["created_at", "2019-04-29 21:42:02.703414"], ["updated_at", "2019-04-29 21:42:02.703414"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 42], ["tag_id", 22], ["created_at", "2019-04-29 21:42:02.715604"], ["updated_at", "2019-04-29 21:42:02.715604"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 46], ["tag_id", 22], ["created_at", "2019-04-29 21:42:02.726187"], ["updated_at", "2019-04-29 21:42:02.726187"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.3ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 56], ["tag_id", 24], ["created_at", "2019-04-29 21:42:02.736801"], ["updated_at", "2019-04-29 21:42:02.736801"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 56], ["tag_id", 22], ["created_at", "2019-04-29 21:42:02.748498"], ["updated_at", "2019-04-29 21:42:02.748498"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 45], ["tag_id", 23], ["created_at", "2019-04-29 21:42:02.760269"], ["updated_at", "2019-04-29 21:42:02.760269"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPotin Load (0.4ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mTag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mJoinTablePotinTag Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_potin_tags" ("potin_id", "tag_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["potin_id", 59], ["tag_id", 27], ["created_at", "2019-04-29 21:42:02.769714"], ["updated_at", "2019-04-29 21:42:02.769714"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "A popular man arouses the jealousy of the powerful."], ["sender_id", 23], ["created_at", "2019-04-29 21:42:02.791521"], ["updated_at", "2019-04-29 21:42:02.791521"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 51], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:02.817615"], ["updated_at", "2019-04-29 21:42:02.817615"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 51], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:02.825791"], ["updated_at", "2019-04-29 21:42:02.825791"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 51], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:02.830759"], ["updated_at", "2019-04-29 21:42:02.830759"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 51], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:02.836800"], ["updated_at", "2019-04-29 21:42:02.836800"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Shield your son too much, Jessica, and he'll not grow strong enough to fulfill any destiny."], ["sender_id", 29], ["created_at", "2019-04-29 21:42:02.842166"], ["updated_at", "2019-04-29 21:42:02.842166"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 52], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:02.847301"], ["updated_at", "2019-04-29 21:42:02.847301"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 52], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:02.852290"], ["updated_at", "2019-04-29 21:42:02.852290"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 52], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:02.857634"], ["updated_at", "2019-04-29 21:42:02.857634"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 52], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:02.862063"], ["updated_at", "2019-04-29 21:42:02.862063"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "The Guild... they're fighting me in the mental vaults. They're behind everything. They fear the one who will come, who will know more, who will see more. The Guild is behind everything. It's not finished yet. I'm not formed."], ["sender_id", 28], ["created_at", "2019-04-29 21:42:02.866958"], ["updated_at", "2019-04-29 21:42:02.866958"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 53], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:02.871803"], ["updated_at", "2019-04-29 21:42:02.871803"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 53], ["recipient_id", 24], ["created_at", "2019-04-29 21:42:02.876584"], ["updated_at", "2019-04-29 21:42:02.876584"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 53], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:02.881489"], ["updated_at", "2019-04-29 21:42:02.881489"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 53], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:02.886851"], ["updated_at", "2019-04-29 21:42:02.886851"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 53], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:02.892116"], ["updated_at", "2019-04-29 21:42:02.892116"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Before I do your bidding, manling, I must cleanse the way between us. You've put a water burden on me that I'm not sure I care to support. But we Fremen pay our debts"], ["sender_id", 30], ["created_at", "2019-04-29 21:42:02.897438"], ["updated_at", "2019-04-29 21:42:02.897438"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 54], ["recipient_id", 27], ["created_at", "2019-04-29 21:42:02.902330"], ["updated_at", "2019-04-29 21:42:02.902330"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Mood? What has mood to do with it? You fight when the necessity arises — no matter the mood! Mood's a thing for cattle or making love or playing the baliset. It's not for fighting."], ["sender_id", 29], ["created_at", "2019-04-29 21:42:02.907408"], ["updated_at", "2019-04-29 21:42:02.907408"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 55], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:02.912680"], ["updated_at", "2019-04-29 21:42:02.912680"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "He who controls the spice, controls the universe!"], ["sender_id", 27], ["created_at", "2019-04-29 21:42:02.918461"], ["updated_at", "2019-04-29 21:42:02.918461"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 56], ["recipient_id", 27], ["created_at", "2019-04-29 21:42:02.923769"], ["updated_at", "2019-04-29 21:42:02.923769"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 56], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:02.928773"], ["updated_at", "2019-04-29 21:42:02.928773"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 56], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:02.934748"], ["updated_at", "2019-04-29 21:42:02.934748"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 56], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:02.940533"], ["updated_at", "2019-04-29 21:42:02.940533"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "One enemy at a time."], ["sender_id", 21], ["created_at", "2019-04-29 21:42:02.947985"], ["updated_at", "2019-04-29 21:42:02.947985"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 57], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:02.953049"], ["updated_at", "2019-04-29 21:42:02.953049"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 57], ["recipient_id", 30], ["created_at", "2019-04-29 21:42:02.957565"], ["updated_at", "2019-04-29 21:42:02.957565"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "A dead man, surely, no longer requires that water."], ["sender_id", 23], ["created_at", "2019-04-29 21:42:02.962487"], ["updated_at", "2019-04-29 21:42:02.962487"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 58], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:02.967356"], ["updated_at", "2019-04-29 21:42:02.967356"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Listen carefully, Feyd. Observe the plans within plans within plans."], ["sender_id", 30], ["created_at", "2019-04-29 21:42:02.972221"], ["updated_at", "2019-04-29 21:42:02.972221"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 59], ["recipient_id", 24], ["created_at", "2019-04-29 21:42:02.977593"], ["updated_at", "2019-04-29 21:42:02.977593"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 59], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:02.982823"], ["updated_at", "2019-04-29 21:42:02.982823"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "If wishes were fishes, we'd all cast nets."], ["sender_id", 27], ["created_at", "2019-04-29 21:42:02.987862"], ["updated_at", "2019-04-29 21:42:02.987862"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 60], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:02.992788"], ["updated_at", "2019-04-29 21:42:02.992788"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 60], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:02.997279"], ["updated_at", "2019-04-29 21:42:02.997279"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 60], ["recipient_id", 30], ["created_at", "2019-04-29 21:42:03.002020"], ["updated_at", "2019-04-29 21:42:03.002020"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 60], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.010395"], ["updated_at", "2019-04-29 21:42:03.010395"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "But attack can take strange forms. And you will remember the tooth. The tooth. Duke Leto Atreides. You will remember the tooth."], ["sender_id", 23], ["created_at", "2019-04-29 21:42:03.015014"], ["updated_at", "2019-04-29 21:42:03.015014"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 61], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:03.019713"], ["updated_at", "2019-04-29 21:42:03.019713"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 61], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:03.024588"], ["updated_at", "2019-04-29 21:42:03.024588"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 61], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:03.029776"], ["updated_at", "2019-04-29 21:42:03.029776"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 61], ["recipient_id", 27], ["created_at", "2019-04-29 21:42:03.034877"], ["updated_at", "2019-04-29 21:42:03.034877"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "The Guild... they're fighting me in the mental vaults. They're behind everything. They fear the one who will come, who will know more, who will see more. The Guild is behind everything. It's not finished yet. I'm not formed."], ["sender_id", 21], ["created_at", "2019-04-29 21:42:03.040156"], ["updated_at", "2019-04-29 21:42:03.040156"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 62], ["recipient_id", 24], ["created_at", "2019-04-29 21:42:03.045655"], ["updated_at", "2019-04-29 21:42:03.045655"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 62], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.050775"], ["updated_at", "2019-04-29 21:42:03.050775"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Before I do your bidding, manling, I must cleanse the way between us. You've put a water burden on me that I'm not sure I care to support. But we Fremen pay our debts"], ["sender_id", 28], ["created_at", "2019-04-29 21:42:03.058287"], ["updated_at", "2019-04-29 21:42:03.058287"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 63], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:03.064484"], ["updated_at", "2019-04-29 21:42:03.064484"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "No more terrible disaster could befall your people than for them to fall into the hands of a Hero."], ["sender_id", 27], ["created_at", "2019-04-29 21:42:03.069823"], ["updated_at", "2019-04-29 21:42:03.069823"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 64], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.075305"], ["updated_at", "2019-04-29 21:42:03.075305"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 64], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:03.080527"], ["updated_at", "2019-04-29 21:42:03.080527"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "When your opponent fears you, then's the moment when you give the fear its own rein, give it the time to work on him. Let it become terror. The terrified man fights himself. Eventually, he attacks in desperation. That is the most dangerous moment, but the terrified man can be trusted usually to make a fatal mistake."], ["sender_id", 24], ["created_at", "2019-04-29 21:42:03.085702"], ["updated_at", "2019-04-29 21:42:03.085702"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 65], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:03.090844"], ["updated_at", "2019-04-29 21:42:03.090844"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 65], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.095892"], ["updated_at", "2019-04-29 21:42:03.095892"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 65], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:03.101290"], ["updated_at", "2019-04-29 21:42:03.101290"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 65], ["recipient_id", 30], ["created_at", "2019-04-29 21:42:03.107392"], ["updated_at", "2019-04-29 21:42:03.107392"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 65], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:03.113140"], ["updated_at", "2019-04-29 21:42:03.113140"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Listen carefully, Feyd. Observe the plans within plans within plans."], ["sender_id", 26], ["created_at", "2019-04-29 21:42:03.118356"], ["updated_at", "2019-04-29 21:42:03.118356"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 66], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:03.123905"], ["updated_at", "2019-04-29 21:42:03.123905"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 66], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.129355"], ["updated_at", "2019-04-29 21:42:03.129355"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "The day hums sweetly when you have enough bees working for you."], ["sender_id", 30], ["created_at", "2019-04-29 21:42:03.134454"], ["updated_at", "2019-04-29 21:42:03.134454"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 67], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:03.139194"], ["updated_at", "2019-04-29 21:42:03.139194"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 67], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:03.143879"], ["updated_at", "2019-04-29 21:42:03.143879"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 67], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.148178"], ["updated_at", "2019-04-29 21:42:03.148178"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 67], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.152930"], ["updated_at", "2019-04-29 21:42:03.152930"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (27.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.5ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 67], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:03.185335"], ["updated_at", "2019-04-29 21:42:03.185335"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Kill this child. She's an abomination. Kill her!"], ["sender_id", 27], ["created_at", "2019-04-29 21:42:03.191279"], ["updated_at", "2019-04-29 21:42:03.191279"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 68], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:03.196527"], ["updated_at", "2019-04-29 21:42:03.196527"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 68], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.201662"], ["updated_at", "2019-04-29 21:42:03.201662"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "That which submits rules. ... The willow submits to the wind and prospers until one day it is many willows — a wall against the wind. This is the willow's purpose."], ["sender_id", 21], ["created_at", "2019-04-29 21:42:03.207447"], ["updated_at", "2019-04-29 21:42:03.207447"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 69], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.213246"], ["updated_at", "2019-04-29 21:42:03.213246"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 69], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:03.219831"], ["updated_at", "2019-04-29 21:42:03.219831"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 69], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.225654"], ["updated_at", "2019-04-29 21:42:03.225654"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 69], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:03.232429"], ["updated_at", "2019-04-29 21:42:03.232429"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Before I do your bidding, manling, I must cleanse the way between us. You've put a water burden on me that I'm not sure I care to support. But we Fremen pay our debts"], ["sender_id", 22], ["created_at", "2019-04-29 21:42:03.237478"], ["updated_at", "2019-04-29 21:42:03.237478"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 70], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:03.242482"], ["updated_at", "2019-04-29 21:42:03.242482"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 70], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:03.248620"], ["updated_at", "2019-04-29 21:42:03.248620"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 70], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:03.253887"], ["updated_at", "2019-04-29 21:42:03.253887"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "A dead man, surely, no longer requires that water."], ["sender_id", 30], ["created_at", "2019-04-29 21:42:03.258764"], ["updated_at", "2019-04-29 21:42:03.258764"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 71], ["recipient_id", 30], ["created_at", "2019-04-29 21:42:03.264307"], ["updated_at", "2019-04-29 21:42:03.264307"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 71], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.269357"], ["updated_at", "2019-04-29 21:42:03.269357"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 71], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:03.274462"], ["updated_at", "2019-04-29 21:42:03.274462"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 71], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:03.283286"], ["updated_at", "2019-04-29 21:42:03.283286"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 71], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.289115"], ["updated_at", "2019-04-29 21:42:03.289115"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "No more terrible disaster could befall your people than for them to fall into the hands of a Hero."], ["sender_id", 24], ["created_at", "2019-04-29 21:42:03.294290"], ["updated_at", "2019-04-29 21:42:03.294290"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 72], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.299634"], ["updated_at", "2019-04-29 21:42:03.299634"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Before I do your bidding, manling, I must cleanse the way between us. You've put a water burden on me that I'm not sure I care to support. But we Fremen pay our debts"], ["sender_id", 27], ["created_at", "2019-04-29 21:42:03.304897"], ["updated_at", "2019-04-29 21:42:03.304897"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 73], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:03.310180"], ["updated_at", "2019-04-29 21:42:03.310180"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 73], ["recipient_id", 23], ["created_at", "2019-04-29 21:42:03.315939"], ["updated_at", "2019-04-29 21:42:03.315939"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 73], ["recipient_id", 24], ["created_at", "2019-04-29 21:42:03.321184"], ["updated_at", "2019-04-29 21:42:03.321184"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 73], ["recipient_id", 27], ["created_at", "2019-04-29 21:42:03.326280"], ["updated_at", "2019-04-29 21:42:03.326280"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.2ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 73], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.332845"], ["updated_at", "2019-04-29 21:42:03.332845"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Command must always look confident. All that faith riding on your shoulders while you sit in the critical seat and never show it."], ["sender_id", 24], ["created_at", "2019-04-29 21:42:03.353286"], ["updated_at", "2019-04-29 21:42:03.353286"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 74], ["recipient_id", 29], ["created_at", "2019-04-29 21:42:03.371211"], ["updated_at", "2019-04-29 21:42:03.371211"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 74], ["recipient_id", 28], ["created_at", "2019-04-29 21:42:03.381549"], ["updated_at", "2019-04-29 21:42:03.381549"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 74], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.392373"], ["updated_at", "2019-04-29 21:42:03.392373"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 74], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:03.403550"], ["updated_at", "2019-04-29 21:42:03.403550"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 74], ["recipient_id", 30], ["created_at", "2019-04-29 21:42:03.420815"], ["updated_at", "2019-04-29 21:42:03.420815"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mPrivateMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "private_messages" ("content", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Before I do your bidding, manling, I must cleanse the way between us. You've put a water burden on me that I'm not sure I care to support. But we Fremen pay our debts"], ["sender_id", 22], ["created_at", "2019-04-29 21:42:03.436424"], ["updated_at", "2019-04-29 21:42:03.436424"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.5ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 75], ["recipient_id", 26], ["created_at", "2019-04-29 21:42:03.448345"], ["updated_at", "2019-04-29 21:42:03.448345"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 75], ["recipient_id", 22], ["created_at", "2019-04-29 21:42:03.459694"], ["updated_at", "2019-04-29 21:42:03.459694"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.3ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 75], ["recipient_id", 30], ["created_at", "2019-04-29 21:42:03.470855"], ["updated_at", "2019-04-29 21:42:03.470855"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 75], ["recipient_id", 21], ["created_at", "2019-04-29 21:42:03.481002"], ["updated_at", "2019-04-29 21:42:03.481002"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mJoinTableRecipientPm Create (0.4ms)[0m  [1m[32mINSERT INTO "join_table_recipient_pms" ("received_message_id", "recipient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["received_message_id", 75], ["recipient_id", 25], ["created_at", "2019-04-29 21:42:03.497200"], ["updated_at", "2019-04-29 21:42:03.497200"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+Started GET "/" for 127.0.0.1 at 2019-04-29 23:42:17 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/clem/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DynamicController#home as HTML
+  Rendering dynamic/home.html.erb within layouts/application
+  [1m[36mPotin Load (0.5ms)[0m  [1m[34mSELECT "potins".* FROM "potins"[0m
+  ↳ app/views/dynamic/home.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/dynamic/home.html.erb:15
+  Rendered dynamic/home.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 299ms (Views: 276.7ms | ActiveRecord: 9.7ms)
+
+
